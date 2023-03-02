@@ -3,16 +3,24 @@
 ## Controls
 
 A - Left Move
+
 D - Right Move
+
 S - Down Move
+
 W - Spin
+
 C - Swap with Held
+
 
 ## Commands
 
 /invetris restart - Restart the game manually
+
 /invetris disable - Disable the game
+
 /invetris enable  - Enable the game
+
 
 
 ## How to build
