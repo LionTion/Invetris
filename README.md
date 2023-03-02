@@ -18,5 +18,7 @@ C - Swap with Held
 ## How to build
 
 1.) Open the project in your preferred IDE (IntelliJ IDEA, Eclipse, Visual Studio Code)
+
 2.) To have the IDE run the configs, open the terminal in the project directory and run `gradlew` (or `.\gradlew` `./gradlew`) `idea`/`eclipse`/`vscode` (depending on what you are using).
+
 3.) To build the mod into the `build/libs` directory, run `gradlew` (or `.\gradlew` `./gradlew`) `build`
