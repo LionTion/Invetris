@@ -4,11 +4,13 @@ import net.LionTion.Invetris.Command.DisableCommand;
 import net.LionTion.Invetris.Command.EnableCommand;
 import net.LionTion.Invetris.Command.RestartCommand;
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.client.command.v2.ClientCommandRegistrationCallback;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.screen.v1.ScreenEvents;
 import net.fabricmc.fabric.api.client.screen.v1.ScreenKeyboardEvents;
 import net.fabricmc.fabric.api.command.v2.CommandRegistrationCallback;
 import net.minecraft.client.gui.screen.ingame.InventoryScreen;
+import net.minecraft.client.report.ReporterEnvironment;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -59,9 +61,9 @@ public class Mod implements ModInitializer {
 			}
 		});
 
-		CommandRegistrationCallback.EVENT.register(RestartCommand::register);
-		CommandRegistrationCallback.EVENT.register(DisableCommand::register);
-		CommandRegistrationCallback.EVENT.register(EnableCommand::register);
+		ClientCommandRegistrationCallback.EVENT.register(RestartCommand::register);
+		ClientCommandRegistrationCallback.EVENT.register(DisableCommand::register);
+		ClientCommandRegistrationCallback.EVENT.register(EnableCommand::register);
 
 		Mod.LOGGER.debug("Invetris loaded!");
 	}
